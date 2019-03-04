@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menu_userProfile"
+            android:title="الملف الشخصي"
+            />
+        <item
+            android:id="@+id/menu_volunteerWillGo"
+            android:title="الذهاب إلي"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/menu_favourite"
+            android:title="المفضلة"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/menu_userArchive"
+            android:title="الأرشيف" />
+        <item
+            android:id="@+id/menu_appAbout"
+            android:title="عن التطبيق" />
+
+    </group>
+
+    <group >
+        <item
+            android:id="@+id/menu_logout"
+            android:title="تسجيل خروج"
+            >
+
+
+        </item>
+
+    </group>
+</menu>

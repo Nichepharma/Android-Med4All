@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    >
+
+    <LinearLayout
+        android:id="@+id/phone_auth_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="سيتم ارسال رمز التفعيل الي رقم : "
+        android:layout_margin="10dp"
+        />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="ادخل رمز تفعيل الحساب"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/lbl_currentPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+
+                />
+            <EditText
+                android:id="@+id/field_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رمز التفعيل"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/button_verify_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="تفعيل"
+                android:onClick="startVerify"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            <Button
+                android:id="@+id/button_resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="اعاده ارسال رمز التفعيل"
+                android:onClick="resendVerificationCodeAgain"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                />
+        </LinearLayout>
+
+
+</RelativeLayout>

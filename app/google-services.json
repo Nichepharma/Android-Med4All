@@ -1,0 +1,74 @@
+{
+  "project_info": {
+    "project_number": "451677555043",
+    "firebase_url": "https://med4all-17b75.firebaseio.com",
+    "project_id": "med4all-17b75",
+    "storage_bucket": "med4all-17b75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451677555043:android:b00a17fd5961d6ed",
+        "android_client_info": {
+          "package_name": "p.com.med4all"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451677555043-ef7mt7pgan6ni4d9idukq1cg785319t7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "p.com.med4all",
+            "certificate_hash": "25625df3b13996596ef548935472de1930d3a0ac"
+          }
+        },
+        {
+          "client_id": "451677555043-p4jirc9va7i4kth03uhlcn9hl4gmb5va.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "p.com.med4all",
+            "certificate_hash": "de7c5af8daff459a4f7fff71d884a705a74b1941"
+          }
+        },
+        {
+          "client_id": "451677555043-q7ibg4mk7h967lls4urq3aiamkl712lk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-jBtcN6TALXPESPqEgI-7MAzJRfOTH2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451677555043-ducnc21cg2u15onoc6il17f6sfbjlgfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nichepharma.medforall",
+                "app_store_id": "1303541385"
+              }
+            },
+            {
+              "client_id": "451677555043-q7ibg4mk7h967lls4urq3aiamkl712lk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
+
+

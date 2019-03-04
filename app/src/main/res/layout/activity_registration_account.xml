@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    android:layoutDirection="rtl"
+
+    >
+    <Button
+        android:id="@+id/registrationSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تأكيد"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:onClick="submitNewAccount"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registrationSubmit"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/registrationSubmit"
+        android:layout_margin="15dp"
+
+        >
+        <EditText
+            android:id="@+id/reg_txt_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="الأسم الأول"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/reg_txt_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="اﻵسم الثاني"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/reg_txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="رقم التليفون"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/reg_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:hint="البريد الأليكتروني"
+            android:layout_margin="15dp"
+            />
+
+        <EditText
+            android:id="@+id/reg_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:hint="كلمة المرور"
+            android:layout_margin="15dp"
+            />
+
+        <EditText
+            android:id="@+id/reg_txt_rePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:hint="تأكيد كلمة المرور"
+            android:layout_margin="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/reg_spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/reg_spinner_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            />
+
+        <EditText
+            android:id="@+id/reg_txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="العنوان التفصيلي"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_margin="15dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/reg_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="التسجيل كامتطوع ؟" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/reg_progressBarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

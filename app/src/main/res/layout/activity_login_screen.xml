@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    android:layoutDirection="rtl"
+    >
+
+
+    <Button
+        android:id="@+id/login_btn_registration"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="تسجيل مستخدم جديد"
+        android:background="@color/transparent"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:onClick="login_goToRegistration"
+        />
+
+    <ScrollView
+        android:id="@+id/login_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/login_btn_registration"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            app:srcCompat="@drawable/app_logo" />
+        <EditText
+            android:id="@+id/login_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="البريد الاليكتروني"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/login_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="الرقم السري"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:id="@+id/login_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="دخول"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="checkLogin"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:id="@+id/login_btn_forgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="نسيت كلمة المرور"
+            android:background="@color/transparent"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="login_forgetPassword"
+            android:layout_marginTop="25dp"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/login_progressBarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/userProfile_txt_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="الأسم الأول"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                />
+            <EditText
+                android:id="@+id/userProfile_txt_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="الأسم الثاني"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+
+                />
+            <EditText
+                android:id="@+id/userProfile_txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="رقم التليفون"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:enabled="false"
+
+                />
+            <EditText
+                android:id="@+id/userProfile_txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="البريد الأليكتروني"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:enabled="false"
+
+                />
+            <Spinner
+                android:id="@+id/userProfile_spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+
+                />
+            <Spinner
+                android:id="@+id/userProfile_spinner_area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/userProfile_txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="العنوان التفصيلي"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                />
+            <Button
+                android:id="@+id/userProfile_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="تعديل"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

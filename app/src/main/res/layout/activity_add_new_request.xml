@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="p.com.med4all.Activities.Add_newRequest"
+    android:layoutDirection="rtl"
+    android:background="@drawable/rounded_corner"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/addRequest_txt_medName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="اسم الدواء"
+                android:textAlignment="center"
+
+                />
+
+            <EditText
+                android:id="@+id/addRequest_txt_itemCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="الكمية"
+                android:inputType="number"
+                android:textAlignment="center"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                >
+                <Button
+                    android:id="@+id/addRequest_btn_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="التاريخ"
+                    android:textAlignment="center"
+                    android:background="@color/transparent"
+
+                    />
+                <Button
+                    android:id="@+id/addRequest_btn_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="الوقت"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@color/transparent"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                >
+
+                <Spinner
+                    android:id="@+id/addRequest_spinner_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    />
+                <Spinner
+                    android:id="@+id/addRequest_spinner_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="العنوان التفصيلي"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+
+                />
+            <MultiAutoCompleteTextView
+                android:id="@+id/addRequest_txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="مثال : رقم الشقه \n اسم الشارع \n علامة مميزه للمنطقه"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ملاحظات اخري"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/addRequest_txt_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="ملاحظات أخري"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/addRequest_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إرسال"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+
+        />
+
+<RelativeLayout
+    android:id="@+id/addRequest_progressBarView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+
+</RelativeLayout>

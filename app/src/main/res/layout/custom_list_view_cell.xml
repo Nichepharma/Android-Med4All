@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EBF4FB"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    >
+    <Button
+        android:id="@+id/home_btn_favourite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_star_border_black_48dp"
+        android:layout_gravity="left"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cell_medTitle"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="أسم الدواء"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cell_medName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="TEST"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/cell_userTitle"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="أسم المتطوع"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/cell_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="TEST"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/cell_imageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/state1"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/home_btn_volunteerWillGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الذهاب"
+            android:textSize="15sp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    />
+
+</LinearLayout>

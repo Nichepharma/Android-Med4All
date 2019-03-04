@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="p.com.med4all.Activities.RequestDetails"
+    android:layoutDirection="rtl"
+    >
+
+
+    <Button
+        android:id="@+id/requestDetails_btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="إلغاء"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin = "10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBF4FB"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_medNameTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="أسم الدواء"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_medNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_itemCountTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="الكمية"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_itemCountvValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_vistiTimeTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="وقت الزيارة"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_vistiTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00 00/00/00"
+                    />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_cityAreaTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_cityAreaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "الحي و المنطقة"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_addressTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="تفاصيل العنوان"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_addressValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المحاظفة الحي العماره رقم "
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_noteTitle"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="ملاحظات"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_noteValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "ﻻ توجد ملاحظات"
+                    />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:alpha="0.5"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_userNameTitle"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المتطوع"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_userNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "ﻻ يوجد متطوع لهذا الطلب"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/requestDetails_lbl_phoneTitle"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="تليفون المتطوع"
+                    />
+                <TextView
+                    android:id="@+id/requestDetails_lbl_phoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "ﻻ يوجد متطوع لهذا الطلب"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/requestDetails_image_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/state1"
+                android:scaleType="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="serverLink">http://www.nichepharma.com/med4all/_tagFile.php</string>
+    <string name="user_key_id">id</string>
+    <string name="user_key_f_name">u_f_name</string>
+    <string name="user_key_l_name">u_l_name</string>
+    <string name="user_key_phone">u_phone</string>
+    <string name="user_key_email">u_email</string>
+    <string name="user_key_password">u_password</string>
+    <string name="user_key_country_id">u_country_id</string>
+    <string name="user_key_country_name">country_name</string>
+    <string name="user_key_city_id">u_city_id</string>
+    <string name="user_key_city_name">city_name</string>
+    <string name="user_key_area_id">u_area_id</string>
+    <string name="user_key_area_name">area_name</string>
+    <string name="user_key_address">u_address</string>
+    <string name="user_key_type_id">u_type</string>
+    <string name="user_key_type_value">type_value</string>
+    <string name="user_key_token">u_token</string>
+
+
+
+    <string name="request_key_id">id</string>
+    <string name="request_key_med_name">med_name</string>
+    <string name="request_key_date">request_date</string>
+    <string name="request_key_donator_id">donator_id</string>
+    <string name="request_key_donator_f_name">donator_f_name</string>
+    <string name="request_key_donator_l_name">donator_l_name</string>
+    <string name="request_key_donator_phone">donator_phone</string>
+    <string name="request_key_donator_token">donator_token</string>
+    <string name="request_key_country_id">country_id</string>
+    <string name="request_key_country_name">country_name</string>
+    <string name="request_key_city_id">city_id</string>
+    <string name="request_key_city_name">city_name</string>
+    <string name="request_key_area_id">area_id</string>
+    <string name="request_key_area_name">area_name</string>
+    <string name="request_key_address_detail">address_detail</string>
+    <string name="request_key_donator_availableTime">donator_availableTime</string>
+    <string name="request_key_item_count">item_count</string>
+    <string name="request_key_volunteer_id">volunteer_id</string>
+    <string name="request_key_volunteer_phone">volunteer_phone</string>
+    <string name="request_key_volunteer_f_name">volunteer_f_name</string>
+    <string name="request_key_volunteer_l_name">volunteer_l_name</string>
+    <string name="request_key_volunteer_token">volunteer_token</string>
+    <string name="request_key_request_note">request_note</string>
+    <string name="request_key_request_status">request_status</string>
+
+
+
+</resources>
